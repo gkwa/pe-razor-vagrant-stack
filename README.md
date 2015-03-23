@@ -56,3 +56,23 @@ Total Stack Boot Time (timed on my laptop with SSD)
  1. puppet-master 10 mins
  2. razor-server  15 mins
  3. dhcp-server   7  mins
+
+
+====================================================================================================
+[demo@demos-MacBook-Pro:~/pdev/pe-razor-vagrant-stack(master)]$ vagrant up
+vagrant up
+Bringing machine 'puppet-master' up with 'virtualbox' provider...
+Bringing machine 'razor-server' up with 'virtualbox' provider...
+Bringing machine 'dhcp-server' up with 'virtualbox' provider...
+==> puppet-master: Box 'puppetlabs/centos-6.5-64-nocm' could not be found. Attempting to find and install...
+    puppet-master: Box Provider: virtualbox
+    puppet-master: Box Version: >= 0
+The box 'puppetlabs/centos-6.5-64-nocm' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Atlas, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://atlas.hashicorp.com/puppetlabs/centos-6.5-64-nocm"]
+Error: The requested URL returned error: 404 Not Found
+[demo@demos-MacBook-Pro:~/pdev/pe-razor-vagrant-stack(master)]$
